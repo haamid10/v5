@@ -16,7 +16,7 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className='relative bg-[#16193f] w-screen h-screen'>
+    <div className='relative bg-[#0a192f] w-screen h-screen '>
        <div className="absolute w-screen h-screen ">
       {isLoading ? <HexagonAnimation /> :  <Index/>}  
       {/* <HexagonAnimation/> */}

@@ -26,7 +26,7 @@ const HexagonAnimation = () => {
   }, []);
 
   return (
-    <div className="w-max max-w-[100px] my-[300px] ml-[700px]   flex justify-center items-center">
+    <div className="w-max max-w-[100px] my-[300px] ml-[600px]   text-center justify-center items-center">
       <svg
         id="hexagon"
         viewBox="0 0 100 100"
@@ -43,7 +43,7 @@ const HexagonAnimation = () => {
             className="font-sans font-medium text-center text-[50px] leading-[1.25em] tracking-[4.16666603]"
           >
             <text>
-              <tspan x="-2.5" y="33">
+              <tspan x="-2.5" y="33" className=' font-bold font-calibre'>
                 H
               </tspan>
             </text>

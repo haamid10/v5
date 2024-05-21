@@ -1,11 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,jsx,ts,tsx}', // Adjust this line based on your project structure
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        calibre: ['Calibre', 'sans-serif'],
+        poppins: ["Poppins", 'sans-serif'],
+      },
+      
+    },
   },
   plugins: [],
 }
