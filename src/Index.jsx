@@ -1,13 +1,14 @@
-import React from 'react'
-import Nav from './components/Nav'
-import Header from './components/Header';
+import About from "./components/About"
+import Experience from "./components/Experience"
+
 
 const Index = () => {
   return (
-    <div className=' h-screen px-12 py-3 '>
+    <div className=' h-screen w-32'>
+      <h1>heyy</h1>
+      <About/>
+      <Experience/>
 
-      <Nav/>
-      <Header/>
     </div>
   )
 }

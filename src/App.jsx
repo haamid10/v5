@@ -1,33 +1,26 @@
 import React from 'react'
-import Index from './Index'
-import Nav from './components/Nav';
-import HexagonAnimation from './HexagonAnimation';
 import { useState , useEffect } from 'react';
-
+import Header from './components/Header';
+import Index from './Index';
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading time
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // Adjust the timeout as needed
-
-    return () => clearTimeout(timer);
-  }, []);
+  
   return (
-    <div className='relative bg-[#0a192f] w-screen h-screen '>
-       <div className="absolute w-screen h-screen ">
-      {isLoading ? <HexagonAnimation /> :  <Index/>}  
-      {/* <HexagonAnimation/> */}
+    // 
+    <div className='  '>
+
+       <div className="  flex flex-row  h-screen w-screen fixed mt-0 bg-[#0a1627]">
+        <div className='  w-[600px]'>
+       <Header/>
+        </div>
+
+        
+        <div className=' grow '>
+          
+          <Index/>
+          
+        </div>
 
     </div>
-    {/* <Nav/> */}
-
-    <div className=' '>
-    </div>
-
-
     </div>
 
   )
